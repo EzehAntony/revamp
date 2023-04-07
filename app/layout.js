@@ -5,7 +5,7 @@ import { Poppins } from "next/font/google";
 export const metadata = {
   title: "Revamp",
   description: "Reliable hair plug",
-  themeColor: "#07070F",
+  themeColor: "#07070f",
 };
 
 const poppins = Poppins({
