@@ -17,10 +17,10 @@ const Splash = () => {
   };
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
-      gsap.to(g("#splash *"), { visibility: "visible" });
-      t1.to(g("#splash div:nth-of-type(3)"), {
-        height: "0",
-      })
+      t1.to(g("#splash *"), { visibility: "visible" })
+        .to(g("#splash div:nth-of-type(3)"), {
+          height: "0",
+        })
         .to(
           g("#splash div:nth-of-type(2)"),
           {

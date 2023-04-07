@@ -15,6 +15,7 @@
   width: 33.3%;
   height: 100vh;
   background-color: crimson;
+  z-index: 2;
 }
 
 .main h1 {
@@ -22,6 +23,7 @@
   font-weight: 800;
   color: white;
   position: absolute;
+  z-index: 1;
 }
 
 .main i {
