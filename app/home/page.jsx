@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useLayoutEffect, useRef } from "react";
 import styles from "./page.module.css";
 import { Inspiration, Rubik_Moonrocks } from "next/font/google";
 import Product from "../components/product/Product";
@@ -8,15 +8,38 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/all";
 const rubik_Moonrocks = Rubik_Moonrocks({
   subsets: ["latin"],
   weight: "400",
 });
 
 const Home = () => {
+  const ref = useRef(null);
+  const g = gsap.utils.selector(ref);
+  gsap.registerPlugin(ScrollTrigger);
+  const t1 = gsap.timeline();
+
+  useLayoutEffect(() => {
+    const ctx = gsap.context(() => {
+      t1.to(g("#home header"), {
+        background: "#07070F",
+        scrollTrigger: {
+          trigger: g("#home input"),
+          start: "top 0%",
+          end: "top 0%",
+          markers: true,
+          scrub: true,
+        },
+      });
+    });
+    return () => ctx.revert();
+  }, []);
+
   return (
-    <div className={styles.home}>
-      <div className={styles.hero}>
+    <div className={styles.home} id="home" ref={ref}>
+      <div id="hero" className={styles.hero}>
         <header>
           <h1 className={rubik_Moonrocks.className}>HBM</h1>
 
