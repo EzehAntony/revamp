@@ -3,7 +3,7 @@ import React, { useEffect } from "react";
 import styles from "./product.module.css";
 
 const Product = () => {
-  const rand = Math.floor(Math.random() * 11);
+  const rand = Math.floor(Math.random() * 10);
   const price = Math.floor(Math.random() * 500);
 
   return (
