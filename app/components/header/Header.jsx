@@ -18,7 +18,7 @@ const Header = () => {
   };
   return (
     <>
-      <header className={styles.header}>
+      <header id="header" className={styles.header}>
         <h1>HBM</h1>
         <div className={styles.buttons}>
           <i class="bi bi-cart4"></i>

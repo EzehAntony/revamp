@@ -24,13 +24,13 @@ const Home = () => {
 
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
-      t1.to(g("#home header"), {
+      t1.to(g("#home #header"), {
         background: "#07070F",
         transition: 0.4,
         scrollTrigger: {
-          trigger: g("#home input"),
-          start: "top 15%",
-          end: "top 15%",
+          trigger: g("#home #header"),
+          start: "bottom 50%",
+          end: "bottom 50%",
           scrub: true,
         },
       });
