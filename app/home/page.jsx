@@ -30,10 +30,11 @@ const Home = () => {
           <h1>Let's help you discover your taste.</h1>
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad
-            repellendus quasi at et sit cum rerum officiis eius? Laborum,
-            dignissimos.
+            repellendus
           </p>
-          <button>Discover</button>
+          <button>
+            <p>Discover</p>
+          </button>
         </div>
       </div>
 
@@ -46,7 +47,6 @@ const Home = () => {
             className={styles.swiper}
             spaceBetween={0}
             slidesPerView={1.5}
-            
           >
             <SwiperSlide>
               <Product />
