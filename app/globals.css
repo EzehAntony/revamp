@@ -9,14 +9,14 @@
 }
 
 footer {
-  background-color: white;
+  background-color: #04040c;
   padding: 1rem;
   position: relative;
   padding-bottom: 2rem;
 }
 
 footer h1 {
-  color: #002e84;
+  color: #e64209;
   font-size: 25px;
   margin-bottom: 10px;
 }
@@ -26,6 +26,7 @@ footer li {
   font-weight: 600;
   font-size: 13px;
   margin: 5px 0;
+  color: white;
 }
 
 footer p {
@@ -34,6 +35,7 @@ footer p {
   position: absolute;
   bottom: 1rem;
   right: 1rem;
+  color: white;
 }
 
 footer p span {
@@ -41,6 +43,7 @@ footer p span {
   font-weight: 600;
 }
 
+i,
 p,
 h1,
 h2,

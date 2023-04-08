@@ -13,41 +13,6 @@
   display: flex;
   align-items: center;
 }
-
-.home .hero header {
-  z-index: 100;
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: flex;
-  padding: 1rem;
-  align-items: center;
-  height: 70px;
-  width: 100%;
-  background-color: transparent;
-  justify-content: space-between;
-}
-
-.home .hero header h1 {
-  font-weight: 900;
-  font-size: 20px;
-  color: #e64209;
-}
-
-.home .buttons {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.home .buttons i {
-  color: white;
-  font-size: 30px;
-  margin: 10px;
-  font-weight: 800;
-  user-select: none;
-}
-
 .home .content {
   display: flex;
   flex-direction: column;
