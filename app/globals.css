@@ -7,3 +7,8 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+footer {
+  height: 80px;
+  background-color: #e64209;
+}
