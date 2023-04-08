@@ -10,7 +10,7 @@ const Product = () => {
     <div className={styles.product}>
       <img src={`/hair/${rand}.jpg`} alt="" />
       <h3>Rondon Avella</h3>
-      <span>{price}$</span>
+      <span>{price}₦</span>
     </div>
   );
 };

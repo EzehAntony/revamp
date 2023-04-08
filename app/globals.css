@@ -12,3 +12,17 @@ footer {
   height: 80px;
   background-color: #e64209;
 }
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+img {
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+}
