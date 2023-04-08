@@ -1,10 +1,9 @@
 "use client";
 import { useEffect, useLayoutEffect, useRef } from "react";
 import styles from "./page.module.css";
-import gsap from "gsap";
+import gsap, { Power4 } from "gsap";
 import { useRouter } from "next/navigation";
 import { Rubik_Moonrocks } from "next/font/google";
-
 
 const rubik_Moonrocks = Rubik_Moonrocks({ subsets: ["latin"], weight: "400" });
 
@@ -45,10 +44,15 @@ const Splash = () => {
           {
             opacity: 0,
             x: 50,
-            onComplete: () => sendHome(),
           },
           "<+.1"
-        );
+        )
+        .from(g("#splash p"), {
+          opacity: 0,
+          y: -50,
+          ease: "bounce",
+          onComplete: () => sendHome(),
+        });
     });
 
     return () => ctx.revert();
@@ -57,6 +61,7 @@ const Splash = () => {
   return (
     <main ref={ref} id="splash" className={styles.main}>
       <h1 className={rubik_Moonrocks.className}>HBM</h1>
+      <p className={rubik_Moonrocks.className}>haircarebymee</p>
       <i class="bi bi-hearts"></i>
       <div></div>
       <div></div>
