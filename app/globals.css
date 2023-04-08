@@ -9,8 +9,36 @@
 }
 
 footer {
-  height: 80px;
-  background-color: #e64209;
+  background-color: white;
+  padding: 1rem;
+  position: relative;
+  padding-bottom: 2rem;
+}
+
+footer h1 {
+  color: #002e84;
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+footer li {
+  list-style-type: none;
+  font-weight: 600;
+  font-size: 13px;
+  margin: 5px 0;
+}
+
+footer p {
+  font-size: 10px;
+  font-weight: 500;
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+}
+
+footer p span {
+  color: #e64209;
+  font-weight: 600;
 }
 
 p,

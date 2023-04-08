@@ -8,7 +8,6 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
-const inspiration = Inspiration({ subsets: ["latin"], weight: "400" });
 const rubik_Moonrocks = Rubik_Moonrocks({
   subsets: ["latin"],
   weight: "400",
@@ -19,7 +18,7 @@ const Home = () => {
     <div className={styles.home}>
       <div className={styles.hero}>
         <header>
-          <h1 className={rubik_Moonrocks.className}>Revamp</h1>
+          <h1 className={rubik_Moonrocks.className}>HBM</h1>
 
           <div className={styles.buttons}>
             <i class="bi bi-cart4"></i>
@@ -47,6 +46,7 @@ const Home = () => {
             className={styles.swiper}
             spaceBetween={0}
             slidesPerView={1.5}
+            
           >
             <SwiperSlide>
               <Product />

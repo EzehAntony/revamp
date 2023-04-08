@@ -56,7 +56,7 @@ const Splash = () => {
 
   return (
     <main ref={ref} id="splash" className={styles.main}>
-      <h1 className={rubik_Moonrocks.className}>Revamp</h1>
+      <h1 className={rubik_Moonrocks.className}>HBM</h1>
       <i class="bi bi-hearts"></i>
       <div></div>
       <div></div>
