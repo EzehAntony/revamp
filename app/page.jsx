@@ -5,6 +5,7 @@ import gsap from "gsap";
 import { useRouter } from "next/navigation";
 import { Rubik_Moonrocks } from "next/font/google";
 
+
 const rubik_Moonrocks = Rubik_Moonrocks({ subsets: ["latin"], weight: "400" });
 
 const Splash = () => {

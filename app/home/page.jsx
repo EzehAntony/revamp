@@ -2,7 +2,12 @@
 import React from "react";
 import styles from "./page.module.css";
 import { Inspiration, Rubik_Moonrocks } from "next/font/google";
-
+import Product from "../components/product/Product";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import "swiper/css/scrollbar";
 const inspiration = Inspiration({ subsets: ["latin"], weight: "400" });
 const rubik_Moonrocks = Rubik_Moonrocks({
   subsets: ["latin"],
@@ -35,6 +40,97 @@ const Home = () => {
 
       <div className={styles.posts}>
         <input type="text" placeholder="Search for Product" />
+
+        <div className={styles.category}>
+          <h1>Synthetic</h1>
+          <Swiper
+            className={styles.swiper}
+            spaceBetween={0}
+            slidesPerView={1.5}
+          >
+            <SwiperSlide>
+              <Product />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Product />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Product />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Product />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Product />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Product />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Product />
+            </SwiperSlide>
+          </Swiper>
+        </div>
+        <div className={styles.category}>
+          <h1>Bonestraight</h1>
+          <Swiper
+            className={styles.swiper}
+            spaceBetween={0}
+            slidesPerView={1.5}
+          >
+            <SwiperSlide>
+              <Product />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Product />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Product />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Product />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Product />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Product />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Product />
+            </SwiperSlide>
+          </Swiper>
+        </div>
+        <div className={styles.category}>
+          <h1>Monofilament</h1>
+          <Swiper
+            className={styles.swiper}
+            spaceBetween={0}
+            slidesPerView={1.5}
+          >
+            <SwiperSlide>
+              <Product />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Product />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Product />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Product />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Product />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Product />
+            </SwiperSlide>
+            <SwiperSlide>
+              <Product />
+            </SwiperSlide>
+          </Swiper>
+        </div>
       </div>
     </div>
   );

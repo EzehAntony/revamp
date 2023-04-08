@@ -15,7 +15,8 @@
 }
 
 .home .hero header {
-  position: absolute;
+  z-index: 1;
+  position: fixed;
   top: 0;
   left: 0;
   display: flex;
@@ -29,8 +30,8 @@
 
 .home .hero header h1 {
   font-weight: 900;
-  font-size: 40px;
-  color: #E64209;
+  font-size: 20px;
+  color: #e64209;
 }
 
 .home .buttons {
@@ -64,7 +65,7 @@
 }
 
 .home .content button {
-  background-color: #E64209;
+  background-color: #e64209;
   border: 0;
   padding: 1rem 2rem;
   color: white;
@@ -72,13 +73,13 @@
 
 .home .posts {
   padding: 1rem;
-  background-color: white;
+  background-color: #07070f;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   position: relative;
+  padding-top: 50px;
 }
 
 .home .posts input {
@@ -90,4 +91,35 @@
   padding: 1rem;
   border-radius: 10px;
   position: absolute;
+  outline: none;
+}
+
+.home .category {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 30px;
+  overflow-x: hidden;
+  background-color: #07070f;
+  border-radius: 10px 0 0 10px;
+}
+
+.home .category h1 {
+  padding: 0 1rem;
+  font-size: 20px;
+  color: #fff;
+  background-color: #07070f;
+}
+
+.home .category .group {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow-x: scroll;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper {
+  width: 100%;
 }
