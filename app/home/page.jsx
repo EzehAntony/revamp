@@ -1,7 +1,7 @@
 "use client";
-import React, { useLayoutEffect, useRef } from "react";
+import React, { useRef } from "react";
 import styles from "./page.module.css";
-import { Inspiration, Rubik_Moonrocks } from "next/font/google";
+import {  } from "next/font/google";
 import Product from "../components/product/Product";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -10,11 +10,7 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
-import Header from "../components/header/Header";
-const rubik_Moonrocks = Rubik_Moonrocks({
-  subsets: ["latin"],
-  weight: "400",
-});
+
 
 const Home = () => {
   const ref = useRef(null);
@@ -22,26 +18,9 @@ const Home = () => {
   gsap.registerPlugin(ScrollTrigger);
   const t1 = gsap.timeline();
 
-  useLayoutEffect(() => {
-    const ctx = gsap.context(() => {
-      t1.to(g("#home #header"), {
-        background: "#07070F",
-        transition: 0.4,
-        scrollTrigger: {
-          trigger: g("#home #header"),
-          start: "bottom 50%",
-          end: "bottom 50%",
-          scrub: true,
-        },
-      });
-    });
-    return () => ctx.revert();
-  }, []);
-
   return (
     <div className={styles.home} id="home" ref={ref}>
       <div id="hero" className={styles.hero}>
-        <Header />
         <div className={styles.content}>
           <h1>Let's help you discover your taste.</h1>
           <p>

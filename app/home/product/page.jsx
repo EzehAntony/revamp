@@ -4,10 +4,11 @@ import styles from "./product.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import Product from "@/app/components/product/Product";
+import { useRouter } from "next/navigation";
 const product = () => {
+  const router = useRouter();
   return (
     <div className={styles.product}>
-      <Header />
       <img src="/hair/6.jpg" className={styles.mainImg} alt="" />
 
       <div className={styles.swiper}>
@@ -19,7 +20,7 @@ const product = () => {
 
       <div className={styles.title}>
         <h3>Atlas Crosspin wine </h3>
-        <button>
+        <button onClick={() => router.push("/home/product/buy")}>
           <p>buy</p>
           <i class="bi bi-cart4"></i>
         </button>
