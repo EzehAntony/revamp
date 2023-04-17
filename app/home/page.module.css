@@ -11,7 +11,7 @@
 .home .hero {
   min-height: 100vh;
   width: 100%;
-  background: url("/pinkhair.jpg");
+  background: url("/pinkhair.webp");
   background-position: center;
   background-size: cover;
   position: relative;
@@ -116,7 +116,7 @@
   }
 
   .home .hero {
-    background: url("/pinkhairlarge.jpg");
+    background: url("/pinkhairlarge.webp");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
