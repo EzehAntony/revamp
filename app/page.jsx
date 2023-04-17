@@ -1,71 +1,81 @@
 "use client";
+
+import { useRouter } from "next/navigation";
 import { useEffect, useLayoutEffect, useRef } from "react";
 import styles from "./page.module.css";
-import gsap, { Power4 } from "gsap";
-import { useRouter } from "next/navigation";
-import { Rubik_Moonrocks } from "next/font/google";
-
-const rubik_Moonrocks = Rubik_Moonrocks({ subsets: ["latin"], weight: "400" });
+import { gsap } from "gsap";
 
 const Splash = () => {
   const ref = useRef(null);
   const g = gsap.utils.selector(ref);
-  const t1 = gsap.timeline({ duration: 2 });
+  const t1 = gsap.timeline({});
   const router = useRouter();
-  const sendHome = () => {
-    router.push("/home");
-  };
+
+  //gsap
   useLayoutEffect(() => {
     const ctx = gsap.context(() => {
-      t1.to(g("#splash *"), { visibility: "visible" })
-        .to(g("#splash div:nth-of-type(3)"), {
-          height: "0",
-        })
-        .to(
-          g("#splash div:nth-of-type(2)"),
-          {
-            height: "0",
-          },
-          "<+.2"
-        )
-        .to(
-          g("#splash div:nth-of-type(1)"),
-          {
-            height: "0vh",
-          },
-          "<+.2"
-        )
-        .from(g("#splash h1"), {
-          opacity: 0,
-          y: 50,
-        })
+      gsap.to("#main", { visibility: "visible" });
+      t1.from(g("#walls div"), {
+        xPercent: 100,
+        stagger: {
+          each: "0.2",
+        },
+      });
+      t1.to(g("#walls"), { display: "none" }, "<+0.5")
         .from(
-          g("#splash i"),
+          g(`#text h3`),
+          {
+            scale: "1.5",
+            duration: 0.1,
+            y: 50,
+            opacity: 0,
+            stagger: {
+              each: 0.1,
+            },
+          },
+          "<+0.3"
+        )
+        .from(
+          g("#text i"),
           {
             opacity: 0,
-            x: 50,
+            y: -50,
+            onComplete: () => {
+              router.push("/home");
+            },
           },
-          "<+.1"
-        )
-        .from(g("#splash p"), {
-          opacity: 0,
-          y: -50,
-          ease: "bounce",
-          onComplete: () => sendHome(),
-        });
+          "<+0.5"
+        );
     });
 
     return () => ctx.revert();
-  }, []);
+  });
 
   return (
-    <main ref={ref} id="splash" className={styles.main}>
-      <h1 className={rubik_Moonrocks.className}>HBM</h1>
-      <p className={rubik_Moonrocks.className}>haircarebymee</p>
-      <i class="bi bi-hearts"></i>
-      <div></div>
-      <div></div>
-      <div></div>
+    <main className={styles.main} id="main" ref={ref}>
+      <div className={styles.text} id="text">
+        <h3>H</h3>
+        <h3>a</h3>
+        <h3>i</h3>
+        <h3>r</h3>
+        <h3>c</h3>
+        <h3>a</h3>
+        <h3>r</h3>
+        <h3>e</h3>
+        <h3>b</h3>
+        <h3>y</h3>
+        <h3>m</h3>
+        <h3>e</h3>
+        <i></i>
+      </div>
+
+      <div className={styles.walls} id="walls">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
     </main>
   );
 };

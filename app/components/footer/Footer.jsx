@@ -1,24 +1,39 @@
-import React from "react";
+"use client";
+
+import { usePathname } from "next/navigation";
+import { useRouter } from "next/navigation";
+import { useEffect, useState } from "react";
 import styles from "./footer.module.css";
-import { Rubik_Moonrocks } from "next/font/google";
 
-const rubik_Moonrocks = Rubik_Moonrocks({
-  subsets: ["latin"],
-  weight: "400",
-});
 const Footer = () => {
-  return (
-    <footer className={styles.footer}>
-      <h1 className={rubik_Moonrocks.className}>HBM</h1>
-      <li>Brands</li>
-      <li>About us</li>
-      <li>Contact us</li>
-      <li>Terms and conditions</li>
+  const router = useRouter();
+  const path = usePathname();
 
-      <p>
-        Made with love ❤️ <span>Anthony</span>
-      </p>
-    </footer>
+  return (
+    <div className={styles.footer}>
+      <div onClick={() => router.push("/home")}>
+        {path === "/home" ? (
+          <i class="bi bi-house-fill"></i>
+        ) : (
+          <i class="bi bi-house"></i>
+        )}
+      </div>
+
+      <div onClick={() => router.push("/home/wallet")}>
+        {path === "/home/wallet" ? (
+          <i class="bi bi-plus"></i>
+        ) : (
+          <i class="bi bi-plus"></i>
+        )}
+      </div>
+      <div onClick={() => router.push("/home/profile")}>
+        {path === "/home/profile" ? (
+          <i class="bi bi-person-fill"></i>
+        ) : (
+          <i class="bi bi-person"></i>
+        )}
+      </div>
+    </div>
   );
 };
 

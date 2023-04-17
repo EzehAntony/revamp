@@ -1,7 +1,7 @@
 "use client";
 import React, { useRef } from "react";
 import styles from "./page.module.css";
-import {  } from "next/font/google";
+import {} from "next/font/google";
 import Product from "../components/product/Product";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -10,7 +10,6 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
-
 
 const Home = () => {
   const ref = useRef(null);
@@ -40,8 +39,8 @@ const Home = () => {
           <h1>Synthetic</h1>
           <Swiper
             className={styles.swiper}
+            slidesPerView={3}
             spaceBetween={0}
-            slidesPerView={1.5}
           >
             <SwiperSlide>
               <Product />

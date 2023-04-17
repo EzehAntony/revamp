@@ -1,45 +1,66 @@
 .main {
+  background-color: #000;
+  min-height: 100vh;
   display: flex;
   justify-content: center;
-  min-height: 100vh;
   align-items: center;
-  background-color: #07070f;
-  position: relative;
+  flex-direction: column;
+  border: 0;
+  max-width: 100%;
+  overflow-x: hidden;
+  visibility: hidden;
 }
 
-.main * {
-  visibility: none;
-}
-
-.main div {
-  width: 33.3%;
-  height: 100vh;
-  background-color: #0051b3;
-  z-index: 2;
-}
-
-.main h1 {
-  font-size: 50px;
+.main .text {
+  text-transform: uppercase;
   font-weight: 800;
-  color: #e64209;
-  position: absolute;
-  z-index: 1;
-}
-.main p {
-  font-size: 20px;
-  font-weight: 800;
-  color: #e64209;
-  position: absolute;
-  bottom: 1rem;
-  text-transform: capitalize;
-  z-index: 1;
+  transform: rotate(-90deg);
+  display: flex;
+  align-items: baseline;
+  color: #ff65c3;
 }
 
-
+.main h3 {
+  font-size: 55px;
+  padding: 0;
+  margin: 0;
+}
 
 .main i {
-  color: #e64209;
-  font-size: 50px;
+  background-color: #fff;
+  width: 15px;
+  height: 15px;
+  border-radius: 5px;
+}
+
+.walls {
+  width: 100%;
+  background-color: transparent;
   position: absolute;
-  margin: 150px 0 0 0;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  height: 100vh;
+}
+
+.walls * {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+}
+.walls div:nth-of-type(4) {
+  background-color: #000;
+}
+.walls div:nth-of-type(3) {
+  background-color: #3d0929;
+}
+.walls div:nth-of-type(2) {
+  background-color: #741750;
+}
+.walls div:nth-of-type(1) {
+  background-color: #af2c7d;
+}
+.walls div:nth-of-type(0) {
+  background-color: #ff65c3;
 }

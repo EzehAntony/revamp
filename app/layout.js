@@ -1,6 +1,6 @@
 import "./globals.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
-import { Poppins, Rubik_Moonrocks } from "next/font/google";
+import { Poppins,  } from "next/font/google";
 
 export const metadata = {
   title: "Revamp",
@@ -12,14 +12,13 @@ const poppins = Poppins({
   subsets: ["latin"],
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
-const rubik_Moonrocks = Rubik_Moonrocks({
-  subsets: ["latin"],
-  weight: "400",
-});
-export default function RootLayout({ children }) {
+
+const RootLayout = ({ children }) => {
   return (
     <html lang="en">
       <body className={poppins.className}>{children}</body>
     </html>
   );
-}
+};
+
+export default RootLayout;

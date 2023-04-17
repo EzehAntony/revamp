@@ -18,12 +18,17 @@ const buy = () => {
     }
   };
   return (
-    <div className={styles.buy} >
+    <div className={styles.buy}>
       <img src="/hair/4.jpg" alt="" />
       <div className={styles.details}>
         <h1>Alvado morris cin</h1>
         <p>230₦</p>
 
+        <div className={styles.quantity}>
+          <h3>total</h3>
+
+          <p>{}</p>
+        </div>
         <div className={styles.quantity}>
           <h3>quantity</h3>
 

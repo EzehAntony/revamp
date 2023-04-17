@@ -2,7 +2,7 @@
   min-height: 100vh;
   width: 100%;
   background-color: #07070f;
-  padding-top: 70px;
+  padding-bottom: 70px;
 }
 
 .mainImg {
@@ -44,8 +44,8 @@
 }
 
 .product .title button {
-  color: white;
-  background-color: #e64209;
+  color: black;
+  background-color: #fff;
   border: 0;
   display: flex;
   justify-content: center;
@@ -53,17 +53,22 @@
   padding: 0.5rem 1.5rem;
   border-radius: 0.4rem;
   margin: 1rem 0;
+  width: 100%;
 }
 
-.product .title button p {
+.product .title button h3 {
   text-transform: capitalize;
   margin: 0 5px 0 0;
-  font-size: 15px;
+  font-size: 16px;
   font-weight: 600;
+  color: black;
 }
 
 .product .title button i {
-  font-size: 20px;
+  font-size: 25px;
+  color: #ff65c3;
+  padding-right: 10px;
+  
 }
 
 .product .description {
@@ -76,10 +81,10 @@
 .product .category {
   padding: 0 1rem;
   width: 100%;
-  margin-top: 5rem;
+  margin-top: 3rem;
 }
 
 .product .category h1 {
   font-size: 20px;
-  color: #e64209;
+  color: #ff65c3;
 }

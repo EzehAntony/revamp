@@ -1,48 +1,64 @@
 .home {
+  width: 100%;
   min-height: 100vh;
   color: white;
+  padding-bottom: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .home .hero {
   min-height: 100vh;
   width: 100%;
-  background: url("/model2.jpg");
+  background: url("/pinkhair.jpg");
   background-position: center;
   background-size: cover;
   position: relative;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .home .content {
+  width: 100%;
   display: flex;
   flex-direction: column;
   text-align: center;
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 40%;
-  padding: 1rem;
+  padding: 0 1rem;
 }
 
 .home .content h1 {
   text-transform: capitalize;
+  text-shadow: 5px 5px 22px black;
+
   font-size: 30px;
 }
 
 .home .content > p {
+  text-shadow: 2px 2px 22px black;
+
   font-size: 16px;
+  font-weight: 600;
 }
 
 .home .content button {
-  background-color: #e64209;
+  background-color: #ff65c3;
   border: 0;
   width: 100%;
-  padding: 1rem;
-  color: white;
+  padding: 1.2rem;
+  border-radius: 20px 0 20px 0;
+  color: black;
+  font-size: 16px;
+  font-weight: 600;
   margin: 10px 0;
+  box-shadow: 5px 5px 22px black;
 }
 
 .home .posts {
+  width: 100%;
   padding: 1rem;
   background-color: #07070f;
   min-height: 100vh;
@@ -56,7 +72,6 @@
 .home .posts input {
   width: 90%;
   top: -30px;
-  left: 5%;
   height: 60px;
   border: 1px solid black;
   padding: 1rem;
@@ -93,4 +108,49 @@
 
 .swiper {
   width: 100%;
+}
+
+@media (min-width: 800px) {
+  .home {
+    width: 100%;
+  }
+
+  .home .hero {
+    background: url("/pinkhairlarge.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  .home .hero h1 {
+    font-size: 60px;
+    padding: 0;
+  }
+
+  .home .hero p {
+    max-width: 500px;
+  }
+  .home .hero .content {
+    max-width: 800px;
+    align-items: flex-start;
+    text-align: left;
+    left: 3rem;
+  }
+
+  .home .hero .content button {
+    max-width: 400px;
+    padding: 1.5rem;
+  }
+
+  .home .posts input {
+    height: 100px;
+    max-width: 800px;
+    top: -50px;
+    font-size: 20px;
+    font-weight: 600;
+  }
+
+  .home .posts .category {
+    max-width: 1000px;
+  }
 }

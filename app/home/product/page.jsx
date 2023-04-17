@@ -1,5 +1,4 @@
 "use client";
-import Header from "@/app/components/header/Header";
 import styles from "./product.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
@@ -21,16 +20,14 @@ const product = () => {
       <div className={styles.title}>
         <h3>Atlas Crosspin wine </h3>
         <button onClick={() => router.push("/home/product/buy")}>
-          <p>buy</p>
-          <i class="bi bi-cart4"></i>
+          <i class="bi bi-bag"></i>
+          <h3>buy</h3>
         </button>
       </div>
 
       <h3 className={styles.description}>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Numquam
-        reprehenderit magnam laborum nihil praesentium, vel vero ut distinctio
-        veritatis et officiis nostrum error assumenda itaque illum? Illo quaerat
-        id debitis?
+        reprehenderit magnam laborum.
       </h3>
 
       <div className={styles.category}>

@@ -1,7 +1,7 @@
 .buy {
   width: 100%;
   background-color: #07070f;
-  padding-top: 70px;
+  padding-bottom: 80px;
 }
 
 .buy > img {
@@ -35,7 +35,7 @@
 }
 
 .buy .details p {
-  color: #e64209;
+  color: #ff65c3;
   font-size: 20px;
   font-weight: 600;
   padding: 1rem 0;
@@ -58,7 +58,7 @@
   color: white;
   font-size: 30px;
   -webkit-text-stroke: 1px;
-  background-color: #e64209;
+  background-color: #ff65c3;
   border-radius: 5px;
 }
 
@@ -67,7 +67,7 @@
 }
 
 .buy .quantity h2 {
-  color: #e64209;
+  color: #ff65c3;
   font-size: 25px;
   min-width: 50px;
   text-align: center;
@@ -109,5 +109,5 @@
   margin-right: 1rem;
   font-size: 30px;
   -webkit-text-stroke: 0.5px;
-  color: #e64209;
+  color: #ff65c3;
 }
