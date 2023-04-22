@@ -19,12 +19,16 @@ const Footer = () => {
         )}
       </div>
 
-      <div onClick={() => router.push("/home/wallet")}>
+      <div className={styles.cart} onClick={() => router.push("/home/wallet")}>
         {path === "/home/wallet" ? (
-          <i class="bi bi-plus"></i>
+          <i class="bi bi-cart2"></i>
         ) : (
-          <i class="bi bi-plus"></i>
+          <i class="bi bi-cart2"></i>
         )}
+
+        <div className="count">
+          <h3>0</h3>
+        </div>
       </div>
       <div onClick={() => router.push("/home/profile")}>
         {path === "/home/profile" ? (

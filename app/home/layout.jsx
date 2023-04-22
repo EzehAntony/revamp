@@ -1,6 +1,5 @@
 import Footer from "../components/footer/Footer";
 import styles from "./layout.module.css";
-
 function RootLayout({ children }) {
   return (
     <div>

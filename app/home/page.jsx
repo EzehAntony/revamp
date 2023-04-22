@@ -10,6 +10,8 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/all";
+import { Navigation, Pagination } from "swiper";
+import Snowfall from "react-snowfall";
 
 const Home = () => {
   const ref = useRef(null);
@@ -30,6 +32,7 @@ const Home = () => {
             <p>Discover</p>
           </button>
         </div>
+        <Snowfall />
       </div>
 
       <div className={styles.posts}>
@@ -39,28 +42,23 @@ const Home = () => {
           <h1>Synthetic</h1>
           <Swiper
             className={styles.swiper}
-            slidesPerView={3}
-            spaceBetween={0}
+            centeredSlides={false}
+            slidesPerView={"auto"}
+            spaceBetween={10}
           >
-            <SwiperSlide>
+            <SwiperSlide className={styles.swiperslide}>
               <Product />
             </SwiperSlide>
-            <SwiperSlide>
+            <SwiperSlide className={styles.swiperslide}>
               <Product />
             </SwiperSlide>
-            <SwiperSlide>
+            <SwiperSlide className={styles.swiperslide}>
               <Product />
             </SwiperSlide>
-            <SwiperSlide>
+            <SwiperSlide className={styles.swiperslide}>
               <Product />
             </SwiperSlide>
-            <SwiperSlide>
-              <Product />
-            </SwiperSlide>
-            <SwiperSlide>
-              <Product />
-            </SwiperSlide>
-            <SwiperSlide>
+            <SwiperSlide className={styles.swiperslide}>
               <Product />
             </SwiperSlide>
           </Swiper>
@@ -69,28 +67,29 @@ const Home = () => {
           <h1>Bonestraight</h1>
           <Swiper
             className={styles.swiper}
-            spaceBetween={0}
-            slidesPerView={1.5}
+            centeredSlides={false}
+            slidesPerView={"auto"}
+            spaceBetween={10}
           >
-            <SwiperSlide>
+            <SwiperSlide className={styles.swiperslide}>
               <Product />
             </SwiperSlide>
-            <SwiperSlide>
+            <SwiperSlide className={styles.swiperslide}>
               <Product />
             </SwiperSlide>
-            <SwiperSlide>
+            <SwiperSlide className={styles.swiperslide}>
               <Product />
             </SwiperSlide>
-            <SwiperSlide>
+            <SwiperSlide className={styles.swiperslide}>
               <Product />
             </SwiperSlide>
-            <SwiperSlide>
+            <SwiperSlide className={styles.swiperslide}>
               <Product />
             </SwiperSlide>
-            <SwiperSlide>
+            <SwiperSlide className={styles.swiperslide}>
               <Product />
             </SwiperSlide>
-            <SwiperSlide>
+            <SwiperSlide className={styles.swiperslide}>
               <Product />
             </SwiperSlide>
           </Swiper>
@@ -99,28 +98,29 @@ const Home = () => {
           <h1>Monofilament</h1>
           <Swiper
             className={styles.swiper}
-            spaceBetween={0}
-            slidesPerView={1.5}
+            centeredSlides={false}
+            slidesPerView={"auto"}
+            spaceBetween={10}
           >
-            <SwiperSlide>
+            <SwiperSlide className={styles.swiperslide}>
               <Product />
             </SwiperSlide>
-            <SwiperSlide>
+            <SwiperSlide className={styles.swiperslide}>
               <Product />
             </SwiperSlide>
-            <SwiperSlide>
+            <SwiperSlide className={styles.swiperslide}>
               <Product />
             </SwiperSlide>
-            <SwiperSlide>
+            <SwiperSlide className={styles.swiperslide}>
               <Product />
             </SwiperSlide>
-            <SwiperSlide>
+            <SwiperSlide className={styles.swiperslide}>
               <Product />
             </SwiperSlide>
-            <SwiperSlide>
+            <SwiperSlide className={styles.swiperslide}>
               <Product />
             </SwiperSlide>
-            <SwiperSlide>
+            <SwiperSlide className={styles.swiperslide}>
               <Product />
             </SwiperSlide>
           </Swiper>

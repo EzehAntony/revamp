@@ -32,35 +32,55 @@
 
 .home .content h1 {
   text-transform: capitalize;
-  text-shadow: 5px 5px 22px black;
+  text-shadow: 5px 5px 22px #ffffff70;
 
   font-size: 30px;
 }
 
 .home .content > p {
-  text-shadow: 2px 2px 22px black;
+  text-shadow: 2px 2px 22px #ffffff69;
 
   font-size: 16px;
   font-weight: 600;
 }
 
 .home .content button {
-  background-color: #ff65c3;
+  background: url("/pattern.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   border: 0;
   width: 100%;
   padding: 1.2rem;
   border-radius: 20px 0 20px 0;
-  color: black;
-  font-size: 16px;
+  color: #fff;
+  font-size: 18px;
   font-weight: 600;
   margin: 10px 0;
-  box-shadow: 5px 5px 22px black;
+  box-shadow: 5px 5px 22px rgba(255, 255, 255, 0.459);
+  cursor: pointer;
+}
+
+.home .content button:hover {
+  box-shadow: 5px 5px 22px rgba(255, 255, 255, 0.719);
+}
+
+.home .posts::after {
+  content: "";
+  height: 40rem;
+  width: 100%;
+  background-color: #000;
+  transform: skewY(-5deg);
+  transform-origin: top left;
+  position: absolute;
+  top: -1rem;
+  left: 0;
 }
 
 .home .posts {
   width: 100%;
   padding: 1rem;
-  background-color: #07070f;
+  background-color: #000;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -73,11 +93,12 @@
   width: 90%;
   top: -30px;
   height: 60px;
-  border: 1px solid black;
+  border: 1px solid transparent;
   padding: 1rem;
   border-radius: 10px;
   position: absolute;
   outline: none;
+  z-index: 2;
 }
 
 .home .category {
@@ -86,28 +107,40 @@
   flex-direction: column;
   margin-top: 30px;
   overflow-x: hidden;
-  background-color: #07070f;
   border-radius: 10px 0 0 10px;
+  z-index: 2;
 }
 
 .home .category h1 {
   padding: 0 1rem;
   font-size: 20px;
   color: #fff;
-  background-color: #07070f;
-}
-
-.home .category .group {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  overflow-x: scroll;
-  justify-content: center;
-  align-items: center;
+  background-color: #000;
 }
 
 .swiper {
   width: 100%;
+  padding: 2rem 0;
+}
+
+.swiperslide {
+  width: auto;
+  cursor: pointer;
+}
+
+.home i,
+.home p,
+.home h1,
+.home h2,
+.home h3,
+.home h4,
+.home h5,
+.home h6,
+.home li,
+.home img {
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
 }
 
 @media (min-width: 800px) {
@@ -123,7 +156,7 @@
   }
 
   .home .hero h1 {
-    font-size: 60px;
+    font-size: 4rem;
     padding: 0;
   }
 
@@ -143,9 +176,9 @@
   }
 
   .home .posts input {
-    height: 100px;
+    height: 70px;
     max-width: 800px;
-    top: -50px;
+    top: -35px;
     font-size: 20px;
     font-weight: 600;
   }

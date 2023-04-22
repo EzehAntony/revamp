@@ -27,7 +27,7 @@ const buy = () => {
         <div className={styles.quantity}>
           <h3>total</h3>
 
-          <p>{}</p>
+          <p>{230 * quantity}</p>
         </div>
         <div className={styles.quantity}>
           <h3>quantity</h3>

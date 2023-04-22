@@ -1,14 +1,18 @@
 :root {
   background-color: black;
-  -webkit-tap-highlight-color: transparent;
 }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+  -ms-scrollbar-highlight-color: transparent;
+  user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-drag: none;
 }
-
 
 i,
 p,

@@ -20,6 +20,22 @@
   user-select: none;
 }
 
+.footer .cart {
+  display: flex;
+  position: relative;
+}
+
+.footer .cart h3 {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.1rem;
+  font-size: 20px;
+  color: #000;
+  background-color: white;
+  padding: 0 0.3rem;
+  border-radius: 50px;
+}
+
 .footer div:nth-of-type(2) i {
-  font-size: 70px;
+  font-size: 50px;
 }

@@ -11,7 +11,7 @@ const Product = () => {
       className={styles.product}
       onClick={() => router.push("/home/product")}
     >
-      <img src={`/hair/4.jpg`} alt="" />
+      <img src={`/hair/3.jpg`} alt="" />
       <h3>Rondon Avella</h3>
       <span>212₦</span>
     </div>
