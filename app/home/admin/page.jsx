@@ -12,7 +12,7 @@ const admin = () => {
       axios
         .post("https://api.imgur.com/3/image/", {
           headers: {
-            Authorization: `Client-ID ${process.env.clientId}`,
+            Authorization: "Client-ID a106643445852ec",
           },
           data: formData,
         })
