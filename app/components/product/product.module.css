@@ -1,56 +1,71 @@
 .product {
-  width: 200px;
+  width: 180px;
+  height: 220px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-radius: 1rem 0 1rem 0;
-  overflow: hidden;
   cursor: pointer;
   border-bottom: 2px solid #ff65c3;
-  padding: 1rem;
-  background-color: rgba(43, 43, 43, 0.575);
+  background-color: #000000;
   transition: 0.4s;
+  border-radius: 0.8rem;
+  overflow: hidden;
 }
 
 .product:hover {
-  box-shadow: 2px 2px 20px rgba(255, 255, 255, 0.425);
+  box-shadow: 2px 2px 20px rgba(241, 0, 129, 0.829);
 }
 
 .product h3,
-.product span {
+.product h2 {
   width: 100%;
   text-align: left;
 }
 
 .product img {
   width: 100%;
-  height: 200px;
-  background-color: black;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
+  height: 100%;
+  position: absolute;
   object-fit: cover;
-  border-radius: 1rem;
+  border-radius: 0.8rem;
+}
+
+.product .description {
+  display: flex;
+  background-color: #000000d2;
+  width: 100%;
+  z-index: 2;
+  flex-direction: column;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 0 0.5rem;
+  border-radius: 0 0 0.8rem 0.8rem;
 }
 
 .product h3 {
   color: white;
+  font-size: 15px;
+  font-weight: 600;
 }
 
-.product span {
-  color: #ff65c3;
+.product h2 {
+  color: #fff;
   font-weight: 600;
+  font-size: 17px;
+}
+
+.product h2 span {
+  color: transparent;
+  background-image: linear-gradient(45deg, #ff0048, #ff65c3);
+  background-clip: text;
+  transition: 0.8s;
+  text-transform: capitalize;
 }
 
 @media (min-width: 800px) {
   .product {
-    width: 300px;
-    height: 350px;
-  }
-
-  .product img {
-    height: 250px;
+    width: 280px;
+    height: 300px;
   }
 }

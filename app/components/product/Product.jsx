@@ -12,8 +12,12 @@ const Product = () => {
       onClick={() => router.push("/home/product")}
     >
       <img src={`/hair/3.jpg`} alt="" />
-      <h3>Rondon Avella</h3>
-      <span>212₦</span>
+      <div className={styles.description}>
+        <h3>Rondon Avella</h3>
+        <h2>
+          <span>₦</span> 212
+        </h2>
+      </div>
     </div>
   );
 };

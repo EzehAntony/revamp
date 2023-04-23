@@ -36,94 +36,99 @@ const Home = () => {
       </div>
 
       <div className={styles.posts}>
-        <input type="text" placeholder="Search for Product" />
+        <div className={styles.input}>
+          <h3>Search for items</h3>
+          <input type="text" placeholder="Bonestraight" />
+        </div>
 
-        <div className={styles.category}>
-          <h1>Synthetic</h1>
-          <Swiper
-            className={styles.swiper}
-            centeredSlides={false}
-            slidesPerView={"auto"}
-            spaceBetween={10}
-          >
-            <SwiperSlide className={styles.swiperslide}>
-              <Product />
-            </SwiperSlide>
-            <SwiperSlide className={styles.swiperslide}>
-              <Product />
-            </SwiperSlide>
-            <SwiperSlide className={styles.swiperslide}>
-              <Product />
-            </SwiperSlide>
-            <SwiperSlide className={styles.swiperslide}>
-              <Product />
-            </SwiperSlide>
-            <SwiperSlide className={styles.swiperslide}>
-              <Product />
-            </SwiperSlide>
-          </Swiper>
-        </div>
-        <div className={styles.category}>
-          <h1>Bonestraight</h1>
-          <Swiper
-            className={styles.swiper}
-            centeredSlides={false}
-            slidesPerView={"auto"}
-            spaceBetween={10}
-          >
-            <SwiperSlide className={styles.swiperslide}>
-              <Product />
-            </SwiperSlide>
-            <SwiperSlide className={styles.swiperslide}>
-              <Product />
-            </SwiperSlide>
-            <SwiperSlide className={styles.swiperslide}>
-              <Product />
-            </SwiperSlide>
-            <SwiperSlide className={styles.swiperslide}>
-              <Product />
-            </SwiperSlide>
-            <SwiperSlide className={styles.swiperslide}>
-              <Product />
-            </SwiperSlide>
-            <SwiperSlide className={styles.swiperslide}>
-              <Product />
-            </SwiperSlide>
-            <SwiperSlide className={styles.swiperslide}>
-              <Product />
-            </SwiperSlide>
-          </Swiper>
-        </div>
-        <div className={styles.category}>
-          <h1>Monofilament</h1>
-          <Swiper
-            className={styles.swiper}
-            centeredSlides={false}
-            slidesPerView={"auto"}
-            spaceBetween={10}
-          >
-            <SwiperSlide className={styles.swiperslide}>
-              <Product />
-            </SwiperSlide>
-            <SwiperSlide className={styles.swiperslide}>
-              <Product />
-            </SwiperSlide>
-            <SwiperSlide className={styles.swiperslide}>
-              <Product />
-            </SwiperSlide>
-            <SwiperSlide className={styles.swiperslide}>
-              <Product />
-            </SwiperSlide>
-            <SwiperSlide className={styles.swiperslide}>
-              <Product />
-            </SwiperSlide>
-            <SwiperSlide className={styles.swiperslide}>
-              <Product />
-            </SwiperSlide>
-            <SwiperSlide className={styles.swiperslide}>
-              <Product />
-            </SwiperSlide>
-          </Swiper>
+        <div className={styles.group}>
+          <div className={styles.category}>
+            <h1>Synthetic</h1>
+            <Swiper
+              className={styles.swiper}
+              centeredSlides={false}
+              slidesPerView={"auto"}
+              spaceBetween={20}
+            >
+              <SwiperSlide className={styles.swiperslide}>
+                <Product />
+              </SwiperSlide>
+              <SwiperSlide className={styles.swiperslide}>
+                <Product />
+              </SwiperSlide>
+              <SwiperSlide className={styles.swiperslide}>
+                <Product />
+              </SwiperSlide>
+              <SwiperSlide className={styles.swiperslide}>
+                <Product />
+              </SwiperSlide>
+              <SwiperSlide className={styles.swiperslide}>
+                <Product />
+              </SwiperSlide>
+            </Swiper>
+          </div>
+          <div className={styles.category}>
+            <h1>Bonestraight</h1>
+            <Swiper
+              className={styles.swiper}
+              centeredSlides={false}
+              slidesPerView={"auto"}
+              spaceBetween={20}
+            >
+              <SwiperSlide className={styles.swiperslide}>
+                <Product />
+              </SwiperSlide>
+              <SwiperSlide className={styles.swiperslide}>
+                <Product />
+              </SwiperSlide>
+              <SwiperSlide className={styles.swiperslide}>
+                <Product />
+              </SwiperSlide>
+              <SwiperSlide className={styles.swiperslide}>
+                <Product />
+              </SwiperSlide>
+              <SwiperSlide className={styles.swiperslide}>
+                <Product />
+              </SwiperSlide>
+              <SwiperSlide className={styles.swiperslide}>
+                <Product />
+              </SwiperSlide>
+              <SwiperSlide className={styles.swiperslide}>
+                <Product />
+              </SwiperSlide>
+            </Swiper>
+          </div>
+          <div className={styles.category}>
+            <h1>Monofilament</h1>
+            <Swiper
+              className={styles.swiper}
+              centeredSlides={false}
+              slidesPerView={"auto"}
+              spaceBetween={20}
+            >
+              <SwiperSlide className={styles.swiperslide}>
+                <Product />
+              </SwiperSlide>
+              <SwiperSlide className={styles.swiperslide}>
+                <Product />
+              </SwiperSlide>
+              <SwiperSlide className={styles.swiperslide}>
+                <Product />
+              </SwiperSlide>
+              <SwiperSlide className={styles.swiperslide}>
+                <Product />
+              </SwiperSlide>
+              <SwiperSlide className={styles.swiperslide}>
+                <Product />
+              </SwiperSlide>
+              <SwiperSlide className={styles.swiperslide}>
+                <Product />
+              </SwiperSlide>
+              <SwiperSlide className={styles.swiperslide}>
+                <Product />
+              </SwiperSlide>
+            </Swiper>
+          </div>
         </div>
       </div>
     </div>
